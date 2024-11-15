@@ -1,0 +1,77 @@
+<div class="rocketsNavContainer">
+    <h1 class="rocketsNavTitle">
+        {{ .context.Title }}
+    </h1>
+    {{ if .description}}
+    <a href="description/index.html" target="content" class="rocketsNavElement">
+        Description
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Description
+    </p>
+    {{ end }}
+    {{ if .history}}
+    <a href="history/index.html" target="content" class="rocketsNavElement">
+        History
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        History
+    </p>
+    {{ end }}
+    {{ if .versions}}
+    <a href="versions/index.html" target="content" class="rocketsNavElement">
+        Versions
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Versions
+    </p>
+    {{ end }}
+    {{ if .vehicledesign}}
+    <a href="vehicledesign/index.html" target="content" class="rocketsNavElement">
+        Vehicle Design
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Vehicle Design
+    </p>
+    {{ end }}
+    {{ if .images}}
+    <a href="images/index.html" target="content" class="rocketsNavElement">
+        Images
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Images
+    </p>
+    {{ end }}
+    {{ if .launchhistory}}
+    <a href="launchhistory/index.html" target="content" class="rocketsNavElement">
+        Launch History
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Launch History
+    </p>
+    {{ end }}
+    {{ if .flightprofile}}
+    <a href="flightprofile/index.html" target="content" class="rocketsNavElement">
+        Flight Profile
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Flight Profile
+    </p>
+    {{ end }}
+    {{ if .bibliography}}
+    <a href="bibliography/index.html" target="content" class="rocketsNavElement">
+        Bibliography
+    </a>
+    {{ else }}
+    <p class="rocketsNavElement rocketsNavElementDisabled">
+        Bibliography
+    </p>
+    {{ end }}
+</div>

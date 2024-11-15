@@ -1,0 +1,11 @@
+title = "b14643"
+baseURL = 'https://b14643.eu'
+languageCode = 'en-us'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  favicon = "/favicon.ico"

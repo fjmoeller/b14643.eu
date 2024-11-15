@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ $descriptionPath := path.Join .File.Dir "description.md" }}
+{{ $hasDescription := fileExists $descriptionPath }}
+{{ $historyPath := path.Join .File.Dir "history.md" }}
+{{ $hasHistory := fileExists $historyPath }}
+{{ $versionsPath := path.Join .File.Dir "versions.md" }}
+{{ $hasVersions := fileExists $versionsPath }}
+{{ $vehicledesignPath := path.Join .File.Dir "vehicledesign.md" }}
+{{ $hasVehicledesign := fileExists $vehicledesignPath }}
+{{ $imagesPath := path.Join .File.Dir "images.md" }}
+{{ $hasImages := fileExists $imagesPath }}
+{{ $launchhistoryPath := path.Join .File.Dir "launchhistory.md" }}
+{{ $hasLaunchhistory := fileExists $launchhistoryPath }}
+{{ $flightprofilePath := path.Join .File.Dir "flightprofile.md" }}
+{{ $hasFlightprofile := fileExists $flightprofilePath }}
+{{ $bibliographyPath := path.Join .File.Dir "bibliography.md" }}
+{{ $hasBibliography := fileExists $bibliographyPath }}
+<main style="display:grid; grid-template-columns: 1fr minmax(0,5fr);">
+    {{ partial "rockets/nav.html" (dict
+    "context" .
+    "description" $hasDescription
+    "history" $hasHistory
+    "versions" $hasVersions
+    "vehicledesign" $hasVehicledesign
+    "images" $hasImages
+    "launchhistory" $hasLaunchhistory
+    "flightprofile" $hasFlightprofile
+    "bibliography" $hasBibliography
+    )}}
+    <iframe name="content" src="./description/index.html" frameborder="0" class="rocketsContent">
+    </iframe>
+</main>
+{{- end }}

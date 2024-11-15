@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main style="padding: 1rem; height:100%; background-color: var(--main-wrapper);">
+  <h1>{{ .Title }}</h1>
+  <p>{{.Content}}</p>
+  <ul class="listElementWrapper" style="list-style:disc;">
+    {{ range .Pages }}
+    <li class="listElement">
+      <a href="{{ .RelPermalink }}" style="height: 100%;width:100%; text-decoration:none; display: inline-block; padding:1rem">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

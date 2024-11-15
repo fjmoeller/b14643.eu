@@ -1,0 +1,218 @@
+:root {
+	--main-wrapper: rgb(148, 136, 82);
+	--main-nav: rgb(148, 136, 82);
+	--main-content: rgb(232, 209, 128);
+	--header-color: rgb(102, 85, 22);
+	--bg: rgb(207, 201, 175);
+}
+
+p:empty {
+	display: none;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+main {
+	max-width: 1200px;
+	margin: auto;
+	height:100%;
+}
+
+@media (max-width:600px) {
+
+	/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+	main {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+header h1 {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	clear: both;
+	background-color: var(--header-color);
+}
+
+.headerLink {
+	text-align: center;
+	background-color: var(--header-color);
+	width: 100%;
+	height: 100%;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.headerLink:hover {
+	filter: brightness(0.8);
+	transition: all 0.5s ease;
+}
+
+.headerLinkWrapper {
+	display: flex;
+	justify-content: center;
+	height: 5rem;
+}
+
+.headerLogo {
+	overflow: hidden;
+}
+
+.listElementWrapper {
+	
+}
+
+.listElement {
+	max-width: 10rem;
+	background-color: var(--main-wrapper);
+}
+
+.listElement:hover {
+	filter: brightness(0.8);
+	transition: all 0.5s ease;
+}
+
+.rocketsContent {
+	min-height: 800px;
+	width: 100%;
+	height:100%;
+	background-color: var(--main-content);
+}
+
+.rocketsContentHtml {
+	height:100%;
+	background-color: var(--main-content);
+}
+
+.rocketsImageSource {
+	text-align: center;
+}
+
+.rocketsImageSection {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	text-align: center;
+	width: 100%;
+}
+
+
+.rocketsNavContainer {
+	box-sizing: border-box;
+	background-color: var(--main-nav);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0.5em;
+}
+
+.rocketsNavTitle {
+	padding: 1rem;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+}
+
+.rocketsNavElement {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5em;
+	margin: 0.5em;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	background-color: var(--main-wrapper);
+}
+
+.rocketsNavElement:hover {
+	filter: brightness(0.8);
+	transition: all 0.5s ease;
+}
+
+.rocketsNavElementDisabled {
+	color: rgb(78, 78, 78);
+}
+
+.rocketsNavElementDisabled:hover {
+	filter: brightness(1);
+}
+
+.rocketsVehicledesignTable table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+.rocketsVehicledesignTable table tbody tr:nth-child(11n + 12) {
+	border-left: 1px solid rgb(182, 182, 182);
+	border-right: 1px solid rgb(182, 182, 182);
+	background-color: rgb(182, 182, 182);
+}
+
+.rocketsVehicledesignTable table tbody tr td {
+	border: 1px solid black;
+	padding: 3px;
+	min-width: 9rem;
+}
+
+.rocketsVehicledesignTable table thead tr th {
+	background-color: rgb(255, 226, 99);
+	border: 1px solid black;
+}
+
+.rocketsFlightprofileTable table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+.rocketsFlightprofileTable table tbody tr td {
+	border: 1px solid black;
+	padding: 3px;
+	min-width: 9rem;
+}
+
+.rocketsFlightprofileTable table thead {
+	background-color: rgb(255, 226, 99);
+}
+
+.rocketsFlightprofileTable table thead tr th {
+	background-color: rgb(255, 226, 99);
+	border: 1px solid black;
+}
+
+
+.rocketsLaunchhistoryTable table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+.rocketsLaunchhistoryTable table tbody tr td {
+	border: 1px solid black;
+	padding: 3px;
+	min-width: 9rem;
+}
+
+.rocketsLaunchhistoryTable table thead {
+	background-color: rgb(255, 226, 99);
+}
+
+.rocketsLaunchhistoryTable table thead tr th {
+	background-color: rgb(255, 226, 99);
+	border: 1px solid black;
+}

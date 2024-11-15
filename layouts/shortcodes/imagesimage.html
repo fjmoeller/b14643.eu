@@ -1,0 +1,15 @@
+<figure style="margin-left: 1rem;margin-right:1rem;">
+	<div>
+		<img style="width: 100%;" src="{{ index .Params "link" }}">
+		{{ if isset .Params "source"}}
+		<a class="rocketsImageSource" href="{{ index .Params "source" }}" target="_blank">
+			Source
+		</a>
+		{{ end }}
+	</div>
+	{{ if isset .Params "caption" }}
+	<figcaption>
+		{{ index .Params "caption" }}
+	</figcaption>
+	{{ end }}
+</figure>
